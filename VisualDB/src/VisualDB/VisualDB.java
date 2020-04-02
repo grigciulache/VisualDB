@@ -301,6 +301,7 @@ public class VisualDB {
 		frame.getContentPane().setLayout(groupLayout);
 		tableUpdate();
 	}
+	//comment
 	private void tableUpdate() {
 		 try {
 			 Connection con;
@@ -321,7 +322,7 @@ public class VisualDB {
 		     String query = "select * from record";
 		     rs = st.executeQuery(query);
 		     
-		     model.setNumRows(0);
+		     model.setNumRows(0); ///clear all data from table
 		     
 		     while (rs.next()) {
 		        
